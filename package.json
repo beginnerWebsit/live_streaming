@@ -1,0 +1,24 @@
+{
+  "name": "live_streaming",
+  "version": "1.0.0",
+  "description": "page",
+  "homepage": "https://github.com/beginnerWebsit/live_streaming#readme",
+  "bugs": {
+    "url": "https://github.com/beginnerWebsit/live_streaming/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beginnerWebsit/live_streaming.git"
+  },
+  "license": "ISC",
+  "author": "Serega",
+  "type": "commonjs",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --watch styles:dist"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4",
+    "sass": "^1.97.3"
+  }
+}
