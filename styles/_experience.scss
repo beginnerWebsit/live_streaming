@@ -18,7 +18,7 @@
     }
 
     &__cards-wrapper {
-        @include m.d-flex(space-around, center, wrap, row, 20px, 55px);
+        @include m.d-flex(center, center, wrap, row, 20px, 55px);
         width: 100%;
         padding: 0 15px;
     }

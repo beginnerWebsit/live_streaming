@@ -63,6 +63,7 @@
     border-radius: 20px;
     background-color: color.adjust(v.$color_white, $alpha: -0.8);
     overflow: hidden;
+    flex-shrink: 0;
     @include m.d-flex(space-between, center, nowrap, column, 0, 0);
 
     &__title {
