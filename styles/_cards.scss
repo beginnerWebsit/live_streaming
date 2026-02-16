@@ -8,7 +8,7 @@
     height: 205px;
     padding: 20px 10px 0;
     border-radius: 20px;
-    background: color.adjust(v.$color_white, $alpha: -0.8);
+    background-color: color.adjust(v.$color_white, $alpha: -0.8);
     @include m.d-flex(start, center, nowrap, column, 0, 10px);
 
     &__icon {
@@ -53,5 +53,62 @@
             @include m.font(11px, 300, v.$color_black);
 
         }
+    }
+}
+
+.exp-card {
+    width: 325px;
+    height: 295px;
+    position: relative;
+    border-radius: 20px;
+    background-color: color.adjust(v.$color_white, $alpha: -0.8);
+    overflow: hidden;
+    @include m.d-flex(space-between, center, nowrap, column, 0, 0);
+
+    &__title {
+        @include m.font(23px, 400, v.$color_white);
+        @include m.d-flex(center, center, nowrap, column, 0, 0);
+        flex-grow: 1;
+    }
+
+    &__preview {
+        width: 100%;
+        height: 220px;
+    }
+
+    &__btn {
+        width: 120px;
+        height: 90px;
+        border-radius: 20px;
+        border: none;
+        background-color: v.$color_white;
+        rotate: z 7deg;
+        transition: rotate .2s;
+        transition: scale .2s;
+        @include m.position(absolute, 1, -1, bottom, left, -20px, -30px);
+
+        &-icon {
+            width: 36px;
+            height: 23px;
+            fill: v.$color_black;
+            rotate: z -7deg;
+            translate: 12px -3px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            rotate: z 7deg;
+            scale: 1.3;
+
+            .exp-card__btn-icon {
+                rotate: z -7deg;
+                translate: 17px -8px;
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        box-shadow:  0 8px 20px 12px rgba(0,0,0,.15), inset 0 -5px 70px 25px rgba(0,0,0,.2);
     }
 }
