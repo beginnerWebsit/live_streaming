@@ -3,7 +3,7 @@
 @use 'placeholders';
 @use 'sass:color';
 
-.contasts-section {
+.contacts-section {
     background-color: color.adjust(v.$color_white, $alpha: -0.8);
     box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, .15);
 

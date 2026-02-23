@@ -43,6 +43,42 @@
             </nav>
         </div>
     </header>
+    <div class="mob-nav">
+        <label for="checkboxID" class="mob-nav__burger">
+            <svg class="mob-nav__burger-icon" aria-label="burger icon">
+                <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+        <input type="checkbox" id="checkboxID" class="mob-nav__toggler">
+        <nav class="mob-nav__menu nav">
+            <ul class="nav__list">
+                <li class="nav__item-list">
+                    <a href="#work" class="nav__list-item-link">How we work</a>
+                </li>
+                <li class="nav__item-list">
+                    <a href="#about" class="nav__list-item-link">About us</a>
+                </li>
+                <li class="nav__item-list">
+                    <a href="#experience" class="nav__list-item-link">Our experience</a>
+                </li>
+                <li class="nav__item-list">
+                    <a href="#testimonials" class="nav__list-item-link">Testimonials</a>
+                </li>
+                <li class="nav__item-list">
+                    <a href="#form" class="nav__list-item-link">Form</a>
+                </li>
+                <li class="nav__item-list">
+                    <a href="#contacts" class="nav__list-item-link">contacts</a>
+                </li>
+            </ul>
+            <label for="checkboxID" class="nav__cross">
+                <svg class="nav__cross-icon" aria-label="cross icon">
+                    <use href="assets/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+
+    </div>
     <main aria-label="main content">
         <section class="hero-section" aria-label="hero section">
             <div class="container">
@@ -64,7 +100,7 @@
                 </div>
             </div>
         </section>
-        <section class="work-section">
+        <section class="work-section" id="work">
             <div class="container">
                 <div class="work">
                     <h2 class="work__title">How we work</h2>
@@ -129,7 +165,7 @@
             </div>
         </section>
         <hr class="divider">
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="container">
                 <div class="about">
                     <div class="about__quality">
@@ -153,7 +189,7 @@
                 </div>
             </div>
         </section>
-        <section class="experience-section">
+        <section class="experience-section" id="experience">
             <div class="container">
                 <div class="experience">
                     <h2 class="experience__title">Our experience</h2>
@@ -189,7 +225,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
             <div class="container">
                 <div class="testimonials">
                     <h2 class="testimonials__title">Testimonials</h2>
@@ -225,7 +261,7 @@
                 </div>
             </div>
         </section>
-        <section class="form-section">
+        <section class="form-section" id="form">
             <div class="container">
                 <div class="form-section__wrapper">
                     <form action="mailto:streaming_compony@mail.ru" class="form" aria-labelledby="form-title">
@@ -245,7 +281,7 @@
             <div class="form-section__bg-cloud cloud--right"></div>
         </section>
     </main>
-    <footer class="contasts-section">
+    <footer class="contacts-section" id="contacts">
         <div class="container">
             <div class="footer">
                 <div class="footer__terms">
